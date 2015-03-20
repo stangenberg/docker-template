@@ -5,9 +5,9 @@ Creates a docker project
 
 ## Usage 
 
-`curl https://bitbucket.org/thstangenberg/docker-template/raw/master/new.sh | sh`
+`curl -# https://bitbucket.org/thstangenberg/docker-template/raw/master/new.sh | sh`
 
-
+![screenshot](https://bitbucket.org/thstangenberg/docker-template/raw/master/screenshot.png)
 
 
 ## License ##
