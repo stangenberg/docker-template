@@ -18,6 +18,6 @@ MAINTAINER Thorben Stangenberg <thorben@stangenberg.net>
 
 # Clean up when done.
 RUN apt-get clean && \
-	rm -rf /var/lib/apt/lists/* \
-		   /tmp/* \
-		   /var/tmp/* 
+    rm -rf /var/lib/apt/lists/* \
+           /tmp/* \
+           /var/tmp/* 

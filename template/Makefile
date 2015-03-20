@@ -2,8 +2,8 @@
 DOCKER_USER=thstangenberg
 
 # Change this to suit your needs.
-CONTAINER_NAME=baseimage
-DOCKER_IMAGE=baseimage
+CONTAINER_NAME=imagename
+DOCKER_IMAGE=imagename
 DOCKER_TAG=latest
 
 # find the runnings instances
