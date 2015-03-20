@@ -15,8 +15,7 @@ echo ""
 
 if [ -z $1 ]
 then
-  printf "Please name the new image: "
-  read -r inputname
+  read -p "Please name the new image: " inputname </dev/tty
 fi
 
 if [ "$1" ] 
@@ -25,10 +24,9 @@ then
 fi
 
 
-if [ -z $2 ]
+if [ -z "$2" ]
 then
-  printf "What is it about?: "
-  read -r description
+  read -p "What is it about? " description </dev/tty
 fi
 
 baseurl=${3:-"https://bitbucket.org/thstangenberg/docker-template/raw/master/template"}
