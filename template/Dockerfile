@@ -1,6 +1,6 @@
 FROM thstangenberg/baseimage:latest
 
-MAINTAINER Thorben Stangenberg <thorben@stangenberg.net>
+MAINTAINER Thorben Stangenberg <thorben@stangenberg.ch>
 
 ## Do what is needed
 
