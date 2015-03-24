@@ -60,6 +60,7 @@ load LICENSE.md
 load LICENSE.txt
 load Makefile
 load README.md
+load .gitignore
 
 sed -i .backup "s/imagename/$imagename/g" $dirname/Makefile
 sed -i .backup "s/imagename/$imagename/g" $dirname/README.md
