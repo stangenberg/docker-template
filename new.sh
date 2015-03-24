@@ -29,7 +29,7 @@ then
   read -p "What is it about? " description </dev/tty
 fi
 
-baseurl=${3:-"https://bitbucket.org/thstangenberg/docker-template/raw/master/template"}
+baseurl=${3:-"https://bitbucket.org/stangenberg/docker-template/raw/master/template"}
 
 imagename=${inputname// /_}
 
