@@ -38,6 +38,7 @@ then
   inputname=$1
 fi
 
+imagename=${inputname// /_}
 dirname=$(pwd -L)/docker-$imagename
 checkdir $dirname
 
@@ -53,8 +54,6 @@ echo ""
 echo ""
 
 baseurl=${3:-"https://bitbucket.org/stangenberg/docker-template/raw/master/template"}
-
-imagename=${inputname// /_}
 
 load Dockerfile
 load LICENSE.md
