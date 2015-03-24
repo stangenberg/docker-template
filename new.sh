@@ -13,6 +13,21 @@ echo "                                                                          
 echo "                     Creating a new Docker image"
 echo ""
 
+checkdir() {
+	dirname=$1
+	if [ -d $dirname ] 
+	then
+		echo "directory $dirname exists already - aborting"
+		exit 1
+	fi
+	mkdir $dirname
+}
+
+load() {
+	echo "Creating $1"
+	curl -# $baseurl/$1 -o $dirname/$1
+}
+
 if [ -z $1 ]
 then
   read -p "Please name the new image: " inputname </dev/tty
@@ -23,34 +38,23 @@ then
   inputname=$1
 fi
 
+dirname=$(pwd -L)/docker-$imagename
+checkdir $dirname
 
 if [ -z "$2" ]
 then
   read -p "What is it about? " description </dev/tty
 fi
 
-baseurl=${3:-"https://bitbucket.org/stangenberg/docker-template/raw/master/template"}
-
-imagename=${inputname// /_}
-
-dirname=$(pwd -L)/docker-$imagename
 echo ""
 echo ""
 echo "creating project in $dirname"
 echo ""
 echo ""
-if [ -d $dirname ] 
-then
-	echo "directory $dirname exists already - aborting"
-	exit 1
-fi
 
-mkdir $dirname
+baseurl=${3:-"https://bitbucket.org/stangenberg/docker-template/raw/master/template"}
 
-load() {
-	echo "Creating $1"
-	curl -# $baseurl/$1 -o $dirname/$1
-}
+imagename=${inputname// /_}
 
 load Dockerfile
 load LICENSE.md
