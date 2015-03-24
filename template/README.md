@@ -50,5 +50,5 @@ Make is used as build system.
 
 [Published under the MIT License][LICENSE]
 
-[DOCKERHUB]: https://hub.docker.com/u/thstangenberg/docker-imagename
-[LICENSE]: https://bitbucket.org/thstangenberg/docker-imagename/src/master/LICENSE.md "Published under the MIT License"
+[DOCKERHUB]: https://hub.docker.com/u/stangenberg/docker-imagename
+[LICENSE]: https://bitbucket.org/stangenberg/docker-imagename/src/master/LICENSE.md "Published under the MIT License"
