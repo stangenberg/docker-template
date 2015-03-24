@@ -25,7 +25,7 @@ checkdir() {
 
 load() {
 	echo "Creating $1"
-	curl -# $baseurl/$1 -o $dirname/$1
+	curl --progress-bar $baseurl/$1 -o $dirname/$1
 }
 
 if [ -z $1 ]

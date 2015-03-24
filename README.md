@@ -5,7 +5,7 @@ Creates a docker project
 
 ## Usage 
 
-`curl -# https://bitbucket.org/stangenberg/docker-template/raw/master/new.sh | sh`
+`curl --progress-bar https://bitbucket.org/stangenberg/docker-template/raw/master/new.sh | sh`
 
 ![screenshot](https://bitbucket.org/stangenberg/docker-template/raw/master/screenshot.png)
 
