@@ -62,10 +62,9 @@ load Makefile
 load README.md
 load .gitignore
 
-sed -i .backup "s/imagename/$imagename/g" $dirname/Makefile
-sed -i .backup "s/imagename/$imagename/g" $dirname/README.md
-sed -i .backup "s/description/$description/g" $dirname/README.md
+sed -i "s/imagename/$imagename/g" $dirname/Makefile
+sed -i "s/imagename/$imagename/g" $dirname/README.md
+sed -i "s/description/$description/g" $dirname/README.md
 
-rm -f $dirname/*.backup
 echo ""
 echo "Ready."
