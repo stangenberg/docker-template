@@ -2,7 +2,7 @@
 
 description
 
-Dockerhub: [thstangenberg/imagename][dockerhub]
+Dockerhub: [stangenberg/imagename][dockerhub]
 
 ## Features ##
 
@@ -18,7 +18,7 @@ None.
 
 ## Exposed ports ##
 
-- 22 / SSH 
+- 22 / SSH
 
 
 ## Environment Variables
@@ -34,12 +34,12 @@ See [https://github.com/phusion/baseimage-docker](https://github.com/phusion/bas
 Write here what to do with it and how - example run commands
 
 
-## Build 
+## Build
 
 Make is used as build system.
 
 - `make` / starts normal docker build.
-- `make run` / build and run the container. This uses `imagename` as container name and automatically stops a running container with an equal name beforehand. 
+- `make run` / build and run the container. This uses `imagename` as container name and automatically stops a running container with an equal name beforehand.
 - `make bash` /  build, run the container and start a bash prompt.
 - `make ncbuild` / normal build without using the docker cache ( --no-cache ).
 
@@ -50,5 +50,5 @@ Make is used as build system.
 
 [Published under the MIT License][LICENSE]
 
-[DOCKERHUB]: https://hub.docker.com/u/stangenberg/docker-imagename
-[LICENSE]: https://bitbucket.org/stangenberg/docker-imagename/src/master/LICENSE.md "Published under the MIT License"
+[DOCKERHUB]: https://hub.docker.com/u/stangenberg/imagename
+[LICENSE]: https://github.com/stangenberg/docker-imagename/blob/master/LICENSE.md

@@ -1,17 +1,17 @@
 # Docker Template
 
-Creates a docker project
+Creates a docker project.
 
 
-## Usage 
+## Usage
 
-`curl --progress-bar https://bitbucket.org/stangenberg/docker-template/raw/master/new.sh | bash`
+`curl --progress-bar https://github.com/stangenberg/docker-template/blob/master/new.sh | bash`
 
-![screenshot](https://bitbucket.org/stangenberg/docker-template/raw/master/screenshot.png)
+![screenshot](https://raw.githubusercontent.com/stangenberg/docker-template/master/screenshot.png)
 
 
 ## License ##
 
 [Published under the MIT License][LICENSE]
 
-[LICENSE]: https://bitbucket.org/stangenberg/docker-baseimage/src/master/LICENSE.md "Published under the MIT License"
+[LICENSE]: https://github.com/stangenberg/docker-template/blob/master/LICENSE.md

@@ -1,4 +1,4 @@
-FROM thstangenberg/baseimage:latest
+FROM stangenberg/baseimage:latest
 
 MAINTAINER Thorben Stangenberg <thorben@stangenberg.ch>
 
@@ -8,16 +8,16 @@ MAINTAINER Thorben Stangenberg <thorben@stangenberg.ch>
 #ENV name value
 
 ## add files
-#ADD src dest 
+#ADD src dest
 
-## run a command 
+## run a command
 #RUN command
 
-## expose a port 
+## expose a port
 #EXPOSE port
 
 # Clean up when done.
 RUN apt-get clean && \
     rm -rf /var/lib/apt/lists/* \
            /tmp/* \
-           /var/tmp/* 
+           /var/tmp/*
