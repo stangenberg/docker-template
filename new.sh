@@ -62,9 +62,9 @@ load Makefile
 load README.md
 load .gitignore
 
-sed -i "s/imagename/$imagename/g" $dirname/Makefile
-sed -i "s/imagename/$imagename/g" $dirname/README.md
-sed -i "s/description/$description/g" $dirname/README.md
+sed -i '' "s/imagename/$imagename/g" $dirname/Makefile
+sed -i '' "s/imagename/$imagename/g" $dirname/README.md
+sed -i '' "s/description/$description/g" $dirname/README.md
 
 echo ""
 echo "Ready."
