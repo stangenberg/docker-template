@@ -15,7 +15,7 @@ echo ""
 
 checkdir() {
 	dirname=$1
-	if [ -d $dirname ] 
+	if [ -d $dirname ]
 	then
 		echo "directory $dirname exists already - aborting"
 		exit 1
@@ -33,7 +33,7 @@ then
   read -p "Please name the new image: " inputname </dev/tty
 fi
 
-if [ "$1" ] 
+if [ "$1" ]
 then
   inputname=$1
 fi
@@ -53,7 +53,7 @@ echo "creating project in $dirname"
 echo ""
 echo ""
 
-baseurl=${3:-"https://bitbucket.org/stangenberg/docker-template/raw/master/template"}
+baseurl=${3:-"https://raw.githubusercontent.com/stangenberg/docker-template/master/template"}
 
 load Dockerfile
 load LICENSE.md
