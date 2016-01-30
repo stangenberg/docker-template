@@ -17,7 +17,5 @@ MAINTAINER Thorben Stangenberg <thorben@stangenberg.ch>
 #EXPOSE port
 
 # Clean up when done.
-RUN apt-get clean && \
-    rm -rf /var/lib/apt/lists/* \
-           /tmp/* \
-           /var/tmp/*
+RUN rm -rf /tmp/* \
+  && rm -rf /var/cache/apk/*
